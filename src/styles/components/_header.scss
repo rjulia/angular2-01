@@ -1,0 +1,78 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 450px;
+    -webkit-transition: all 3.5s;
+    transition: all 3.5s;
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-brand {
+        display: block;
+        padding: 25px 25px;
+        color: color(white);
+        font-family: 'Open Sans';
+        font-size: 30px;
+        font-weight: 100;
+        width: 100%;
+        -webkit-transition: all 3.5s;
+        transition: all 3.5s;
+        @include respond-to(small) {
+              font-size: 35px;
+              padding: 75px 75px;
+        }
+        @include respond-to(large) {
+              font-size: 65px;
+              padding: 150px 150px;
+        }
+    }
+    .container-fluid {
+        padding: 0;
+        position: relative;
+    }
+    .navbar-collapse {
+        height: 550px;
+        padding: 30px 20px;
+    }
+    .content__img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+        img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        @include respond-to(small) {
+             top: -100px;
+        }
+        @include respond-to(large) {
+             top: -400px;
+        }
+    }
+    &.shrink-header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        opacity: 0.9px;
+        height: 65px;
+        .navbar-brand {
+            padding: 15px 0 0 65px;
+            font-size: 20px;
+            font-weight: 100;
+            
+        }
+    }
+} 
+
+body {
+    height: 2000px;
+}
+
+.side-collapse-container{
+    margin-top: 450px;
+}
+

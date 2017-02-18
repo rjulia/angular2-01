@@ -1,0 +1,10 @@
+
+.btn {
+    background-color: color(orangeA700);
+    @include respond-to(small) {
+        background-color: color(orange500)
+    }
+     @include respond-to(large) {
+        background-color: color(orange900)
+    }
+}
